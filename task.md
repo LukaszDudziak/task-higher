@@ -5,7 +5,6 @@ At first, if the task seems too complicated, don’t worry – you’ll find tip
 The task is to write a web app that will fetch list of photos, and display first 3 of them – side by side.
 ​
 Few things to keep in mind:
-​
 
 - Fetch list of photos from this URL: `https://picsum.photos/v2/list`
 - To render an image from unsplash you can use `http://source.unsplash.com/{SLUG}` (for example http://source.unsplash.com/yC-Yzbqy7PY)
