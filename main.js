@@ -1,20 +1,21 @@
 const imageDispay = document.querySelector(".imageDispay");
 const arrayResult = [];
+let url;
+let newElement;
 
-//fecz danych i przerobienie promisa w tablicę
 fetch("https://picsum.photos/v2/list")
-  .then((response) => response.json())
-  .then((data) => {
-    for (let i in data) {
-      arrayResult.push([data[i]]);
-    }
-  });
+  .then((response) => {
+    return response.json();
+  })
+  .then((response) => {
+    console.log(response);
 
-const display = () => {
-  console.log(arrayResult);
-  arrayResult.forEach((result) => {
-    console.log(result);
+    response.forEach((resp) => {
+      newElement = document.createElement("img");
+      console.log(resp.url);
+      url = resp.url.substr(28);
+      console.log(url);
+      newElement.src = `http://source.unsplash.com/${url}`;
+      imageDispay.appendChild(newElement);
+    });
   });
-};
-
-display();
