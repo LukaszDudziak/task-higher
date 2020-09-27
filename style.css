@@ -67,3 +67,12 @@ img:hover ~ figcaption {
   box-shadow: -5px -10px rgb(128, 126, 126);
   background-color: #fff;
 }
+
+@media (max-width: 1024px) {
+  img:hover ~ figcaption {
+    display: none;
+  }
+  img:hover {
+    opacity: 1;
+  }
+}
