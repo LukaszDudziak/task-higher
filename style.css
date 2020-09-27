@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 33%;
+}
+
+.wrapper {
+  line-height: 100vh;
+}
+
+.imageDisplay {
+  display: flex;
+  align-items: center;
+  background-color: #eee;
+}
