@@ -66,6 +66,7 @@ img:hover ~ figcaption {
 #nextBtn:hover {
   box-shadow: -5px -10px rgb(128, 126, 126);
   background-color: #fff;
+  cursor: pointer;
 }
 
 @media (max-width: 1023px) {
